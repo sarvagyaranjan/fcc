@@ -1,0 +1,153 @@
+body {
+  overflow-x: hidden;
+}
+
+.welcome-section {
+  margin: 1vw;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+.animation-area {
+  background: linear-gradient(to left, #8942a8, #ba382f);
+  width: 100%;
+  height: 100vh;
+}
+.box-area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.box-area li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 25px;
+  height: 25px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: animate 20s linear infinite;
+  bottom: -150px;
+}
+.box-area li:nth-child(1) {
+  left: 86%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+.box-area li:nth-child(2) {
+  left: 12%;
+  width: 30px;
+  height: 30px;
+  animation-delay: 1.5s;
+  animation-duration: 10s;
+}
+.box-area li:nth-child(3) {
+  left: 70%;
+  width: 100px;
+  height: 100px;
+  animation-delay: 5.5s;
+}
+.box-area li:nth-child(4) {
+  left: 42%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 15s;
+}
+.box-area li:nth-child(5) {
+  left: 65%;
+  width: 40px;
+  height: 40px;
+  animation-delay: 0s;
+}
+.box-area li:nth-child(6) {
+  left: 15%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3.5s;
+}
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-800px) rotate(360deg);
+    opacity: 0;
+  }
+}
+.projects-section {
+  text-align: center;
+  padding: 10rem 2rem;
+  background: linear-gradient(to right, rgb(240, 138, 138), #aba000);
+}
+.projects-section a {
+  color: black;
+  text-decoration: none;
+}
+.projects-section a:hover {
+  transform: scale(2);
+  text-decoration: none;
+}
+
+#contact {
+  background-color: black;
+  color: #ffff;
+  padding: 50px;
+  justify-content: center;
+  text-align: center;
+}
+
+.contact-links {
+  display: inline;
+  margin: 10vw;
+  padding: 0px;
+  text-align: center;
+  justify-content: center;
+  font-size: medium;
+}
+.contact-links a:hover {
+  text-decoration: none;
+  transform: scale(1.5);
+}
+
+footer {
+  border: 2px solid;
+  border-top: 4px solid red;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+@media (max-width: 28.75em) {
+  html {
+    font-size: 55%;
+  }
+}
+
+/* #navbar {
+  display: inline;
+  width: 100%;
+}
+#navbar ul {
+  list-style: none;
+  padding: 20px;
+  float: right required;
+  background-color: black;
+  width: 100%;
+  position: fixed;
+  margin-top: 0;
+}
+
+#navbar li {
+  display: inline;
+  padding: 10px;
+} */

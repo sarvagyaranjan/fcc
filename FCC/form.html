@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A survey form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <main id="main">
+
+        <h1 id="title">CodeCamp</h1>
+        <p id="description">Please take a few minutes to fill out this form.</p>
+
+        <form id="survey-form">
+            <label for="" id="name-label">Name </label><br>
+            <input type="text" name="" id="name" class="form-control" placeholder="Enter your name" required><br>
+            <label for="" id="email-label">Email</label><br>
+            <input type="email" name="" id="email" class="form-control" placeholder="Enter your email" required><br>
+            <label for="" id="number-label">Age (optional) </label><br>
+            <input type="number" name="" id="number" class="form-control" min="0" max="99" placeholder="Age"><br>
+            <label for="">Your Favourite feature on our website </label><br>
+            <select name="dd" id="dropdown" class="form-control">
+                <option disabled selected value="disabled">Select an Option</option>
+                <option value="projects">Projects</option>
+                <option value="community">Community</option>
+                <option value="opensource">Open Source</option>
+                <option value="challenges">Challenges</option>
+            </select>
+            <div id="radio">
+                <p>Would you recommmend our website to your friends?</p><br>
+                <label for="">For sure</label>
+                <input type="radio" name="recommmend" id="radio" value="for sure"><br>
+                <label for="">Maybe</label>
+                <input type="radio" name="recommmend" id="radio" value="maybe"><br>
+                <label for="">Would Not</label>
+                <input type="radio" name="recommmend" id="radio" value="would not"><br>
+
+            </div>
+
+            <div id="checkbox-div">
+
+                <p>What would you like to be improved on our Website?</p>
+                <input type="checkbox" name="" id="checkbox" value="front">
+                <label for="">Front-End Project</label><br><br>
+                <input type="checkbox" name="" id="checkbox" value="back">
+                <label for="">Back-End Project</label><br><br>
+                <input type="checkbox" name="" id="checkbox" value="data">
+                <label for="">Data Visualization</label><br><br>
+                <input type="checkbox" name="" id="checkbox" value="challenges">
+                <label for="">Challenges</label><br><br>
+                <input type="checkbox" name="" id="checkbox" value="opensource">
+                <label for="">Open Source Community</label><br><br>
+                <input type="checkbox" name="" id="checkbox" value="gitter">
+                <label for="">Gitter Help Rooms</label><br><br>
+                <input type="checkbox" name="" id="checkbox" value="wiki">
+                <label for="">Wiki</label><br><br>
+
+            </div>
+
+
+            <p>Any additional comments or suggestions: </p>
+            <textarea name="" id="textarea" cols="50" rows="5" placeholder="Enter your comment here: "
+                class="form-control"></textarea>
+
+
+            <button type="submit" id="submit" class="submit-button">Submit</button>
+            <!-- </div> -->
+
+        </form>
+    </main>
+</body>
+
+</html>

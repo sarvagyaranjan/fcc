@@ -1,0 +1,9 @@
+#tabs {
+  float: right;
+  margin: 10px;
+}
+@media (max-width: 600px) {
+  header {
+    flex-wrap: wrap;
+  }
+}
